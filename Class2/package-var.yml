@@ -1,0 +1,13 @@
+- hosts: all
+  tasks:
+  - name: install packages
+    yum:
+      name: {{ package }}
+      state: latest
+
+  - name: Start apache
+    service:
+      name: {{ package }}
+      state: started
+
+
