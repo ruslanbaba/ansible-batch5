@@ -1,0 +1,10 @@
+- hosts: master
+  tasks: 
+  - hostname:
+      name: kaizen
+
+
+- hosts: worker1
+  tasks: 
+  - hostname:
+      name: hello
